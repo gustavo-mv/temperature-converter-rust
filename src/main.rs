@@ -27,7 +27,7 @@ fn main() {
             println!("Type the Celsius temperature:");
             let mut input = String::new();
             io::stdin().read_line(&mut input).expect("Error reading the line");
-            let celsius: f64 = input.trim().parse().expect("Erro ao converter para número");
+            let celsius: f64 = input.trim().parse().expect("Error converting to number");
             let fahrenheit = celsius_to_fahrenheit(celsius);
             println!("{:.2} Celsius is equal to {:.2} Fahrenheit.", celsius, fahrenheit);
         }
